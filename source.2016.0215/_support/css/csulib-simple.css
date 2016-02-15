@@ -1,0 +1,64 @@
+/* 
+CSU Libraries simple stylesheet 
+This is only to be used for web applications that are difficult to customize using the full header and footer
+Greg Vogl 2010-08-11
+*/
+
+/* new Libraries header */
+body {
+	background: #FBFCF4 url("../images/body-stripes.png") top left repeat-x !important;
+	margin: 0; padding: 0; 
+	font-family: Arial, Sans-Serif;
+	font-size: 90%;
+}
+#header  
+{
+	height: 100px; 
+	width: 44em;
+	margin: 0 auto;
+}
+#header a img { border: 0; }
+
+/* links */
+a, #footer a { color: #13694e; }
+a:visited { color: #696; }
+#footer a:visited { color: #484; }
+a:hover { color: black; text-decoration: underline; }
+
+/* logos */
+#csu-logo, #libraries-logo { display: block; }
+#csu-logo { margin-top: 5px; }
+
+/* breadcrumb */
+#breadcrumb { padding: 0; margin: 0.3em 35px; font-size: 1em; color: #999; }
+#breadcrumb a { text-decoration: none; font-weight: normal; }
+#breadcrumb a:hover { text-decoration: underline; }
+
+/* body */
+#body { width: 44em; margin: 0 auto; padding-bottom: 2em; }
+
+#body h1, #body h2, #body h3
+{
+    clear: left;
+    padding: 0.5em 0;
+    margin: 0.5em 0;
+    display: block;
+}
+
+/* footer */
+#footer { font-size: 90%; } /* for IE6 */
+html>body #footer { font-size: 0.9em; } /* for other browsers */
+#footer { 
+	font-family: Arial, Helvetica, sans-serif; 
+	width: 100%; padding: 0.5em 0; margin: 0.5em 0; clear: both; text-align: center; 
+	color: #333; background-color: #c8ccb1; 
+}
+#footer p { margin: 0; padding: 0; }
+#footer a { font-weight: normal; }
+
+@media handheld, only screen and (max-width: 650px) 
+{
+#header, #body, #footer { width: 100%; max-width: 100%; }
+img { max-width: 100%; } 
+#footer p:first-child { display: none; }
+}

@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.Master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="HandheldFriendly" content="True" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="<%=ResolveClientUrl("~/_support/css/csulib-simple.css") %>" />
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/_support/js/jquery-1.11.0.min.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/_support/js/Custom.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/_support/js/ga.js") %>"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="header">
+        <a id="csu-logo" href="http://www.colostate.edu/" title="Colorado State University">
+            <img src="<%=ResolveClientUrl("~/_support/images/csu.png") %>" width="345" height="45"
+                alt="Colorado State University" /></a> <a id="libraries-logo" href="http://lib.colostate.edu/"
+                    title="Colorado State University Libraries">
+                    <img src="<%=ResolveClientUrl("~/_support/images/libraries-gold2.png") %>" width="117"
+                        height="31" alt="Colorado State University Libraries" /></a>
+    </div>
+    <div id="body">
+        <h1 id="MainHeading" runat="server"></h1>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="footer">
+        <p>URL: <script type="text/javascript">document.write(document.URL);</script>
+            &bull; <a href="http://lib.colostate.edu/about/contact">Contact Us</a> </p>
+        <p><a href="javascript:print()">Print</a> &bull; <a href="http://lib.colostate.edu/sitemap">
+            Sitemap</a> &bull; <a href="http://www.colostate.edu/info-disclaimer.aspx">Disclaimer</a>
+            &bull; <a href="http://tilt.colostate.edu/guides/tilt_copyright/">Copyright</a>
+            &bull; <a href="http://www.colostate.edu/info-equalop.aspx">Equal Opportunity</a>
+            &bull; <a href="http://www.colostate.edu/info-privacy.aspx">Privacy</a> &bull; <a
+                href="http://search.colostate.edu/">Search CSU</a> </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+﻿input, label, a.link, .data, .validator
+{
+    float: left;
+}
+label, input[type="radio"]
+{
+    display: inline-block;
+    width: 10em;
+    text-align: right;
+    margin-right: 1em;
+    clear: left;
+}
+label 
+{
+    color: #666;
+}
+label, a.link, .data {
+    line-height: 1.5em;
+}
+input[type="radio"]
+{
+    width: auto;
+    margin-left: 9.5em;
+}
+.validator 
+{
+    color: red;
+    margin-left: 1em;
+}
+input, #MainContent_Delivery label
+{
+    clear: none;
+    text-align: left; 
+    color: black;
+    width: 25em;
+}
+.data 
+{
+    width: 30em;
+}
+#MainContent_Delivery td
+{
+    background-color: #eee;
+    display: inline-block;
+    padding: 0.1em 0;
+    margin: 0.1em 0;
+    text-align: left;
+}
+#MainContent_Delivery label
+{
+    color: #063;
+}
+#MainContent_Delivery label:hover
+{
+    color: black;
+    text-decoration: underline;
+}
+input[type="submit"]
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    width: auto;
+    margin: 1em 0;
+}
+
+@media handheld, only screen and (max-width: 650px) 
+{
+.data { width: 100%; }
+#MainContent_Delivery td, #MainContent_Delivery label { width: 100%; }
+label, input, textarea { max-width: 100%; text-align: left; float: none; clear: left; display: block; }
+label { width: auto; } 
+input[type="radio"] { margin-left: 0; float: left; } 
+}
