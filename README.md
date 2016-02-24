@@ -1,5 +1,5 @@
 # Material Purchase Request Form for Demand-Driven Acquisitions (DDA)
-Greg Vogl, Colorado State University Libraries, 2015-02-22
+Morgan Library, Colorado State University
 
 ## Demand-Driven Acquisition (DDA) materials 
 * Print books
@@ -17,12 +17,12 @@ Greg Vogl, Colorado State University Libraries, 2015-02-22
 ## Implementation Details
 
 ### Software Components
-* Sage (CSU library catalog, Innovative Millennium, WebPAC Pro, to be replaced by Alma in 2016-7)
-* Prospector (regional library catalog)
-* Discovery (Web-scale discovery tool, customized VuFind beta (0.8, 2009), running Solr 1.4, Java 1.6, PHP, to be replaced by Primo in 2016-7)
-* SQL server databases (accessed using Linq to SQL): CSU eID database with Person table, and Request database with Request table
-* WebAuth (ASP.NET C# application and library for CSU login via eID, to be replaced by Shibboleth in 2016)
-* Material Purchase Request Form (ASP.NET C# application created in 2011)
+* Sage (CSU library catalog) - Innovative Millennium, WebPAC Pro, Z39.50, to be replaced by Alma in 2016-7
+* Prospector (Colorado/regional library catalog) - Innovative Millennium, WebPAC Pro, Encore
+* Discovery (CSU Web-scale discovery tool) - VuFind beta (0.8, 2009), Solr 1.4, Java 1.6, PHP, to be replaced by Primo in 2016-7
+* WebAuth - ASP.NET C# application/library for login via CSU eID, to be replaced by Shibboleth in 2016
+* SQL server databases - CSU eID database with Person table, Request database/table, accessed via Linq to SQL
+* Material Purchase Request Form - ASP.NET C# application, created in 2011
 
 ### Catalog Integration
 * In the MARC record of each DDA book, the 856u field contains the request URL http://librequest.colostate.edu.
@@ -48,3 +48,10 @@ Greg Vogl, Colorado State University Libraries, 2015-02-22
 * The message is logged to the Material Request database.
 * The message sent via email to the patron. (The Collections and Contracts staff email is a BCC recipient.)
 * The message is displayed on a confirmation page, with options to print, return to the catalog record, or log out.
+
+# Contact
+Greg Vogl, Middleware Developer, Academic Computing and Networking Services,
+(970) 491-4394,
+Gregory.Vogl@colostate.edu
+
+February 25, 2016
